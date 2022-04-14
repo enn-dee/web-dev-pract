@@ -1,0 +1,38 @@
+p, h2{
+    color: green;
+    font-size: 32px;
+}
+.intro{
+    color: blue;
+}
+#heading1{
+    border: 2px solid rgb(107, 46, 23);
+}
+#name strong{
+    color: rgb(236, 100, 100);
+}
+#dec{
+    text-decoration: line-through;
+    color: brown;
+    text-shadow: 2px 3px 2px black;
+}
+.align{
+    text-align: center;
+}
+.form{
+    text-align: center;
+}
+.box {
+    border:5px solid red;
+    margin: 7px 4px 67px 1px;
+    padding: 2px 2px 4px 5px;
+    width: 104px;
+    height:100px;
+}
+.box2 {
+    border:5px solid red;
+    margin: 7px 4px 11px 1px;
+    border-radius: 20px;
+    background-image: url('https://source.unsplash.com/random/200x200?sig=1');
+    background-repeat: no-repeat;
+}
