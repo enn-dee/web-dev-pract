@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 50%;
+           
+            
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .table{
+            display: flex;
+         justify-content: center;
+        }
+        body{
+            text-align: center;
+            
+        }
+        .divform{
+            margin: 10px;
+            border: 2px solid rgb(155, 19, 42) ;
+          display: inline-block;
+           width: 50%;
+           border-radius: 10px;
+          
+        }
+        #name{
+            border-radius: 5px;
+            border: 1px solid palevioletred ;
+            padding: 6px;
+            margin: 10px;
+
+        }
+        
+    </style>
+    <title>Set One</title>
+</head>
+<body>
+    <div class="table">
+
+   
+
+  
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll Num</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nadeem </td>
+                <td>788</td>
+                <td>9th</td>
+            </tr>
+            <tr>
+                <td>asif</td>
+                <td>890</td>
+                <td>12th</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="divform">
+    <form action="notificaton.phr">
+        <label for="name">Name: </label>
+        <input type="text" id="name"> 
+    </form>
+</div>
+<script>
+    var name = 'Nadeem';
+    var greeting = 'welcome';
+    var full =`${name} ${greeting} to our page for more updates like our channel`
+    console.log(full)
+    var len = name.length;
+    console.log(`length of String \n${name} is ${len}`)
+    
+    var post = full.indexOf('our')
+    console.log('index is '+post)
+    let age = 34;
+
+    if(age< 18){
+        console.log("you can't drink" )
+    }
+    else{
+        console.log("you can drink")
+    }
+    let nums =4;
+    switch(nums){
+        case 2:
+            console.log('ans is case 2')
+            break;
+            case 4:
+                console.log("ans is case 4")
+                break;
+                default:
+                    console.log("not found")
+
+    }
+    let employe ={
+        name: "Nadeem",
+        class: "12th",
+        rollNum: 54,
+    }
+    console.log(employe)
+    let names =[3,4,5,6,7,8,10]
+    console.log(names);
+</script>
+</html>
