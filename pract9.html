@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            background-color: aqua;
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+
+        }
+        #btn:hover{
+            background-color: yellow;
+        }
+        h3 span{
+            color: maroon;
+            size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Welcome to <span>EnnCoders</span></h3>
+    <div>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolores ullam, minus iusto distinctio quasi consequuntur, quis asperiores illo error expedita sit illum!</p>
+
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+            function greet(name){
+              alert("hello gm "+name);
+
+            }
+            
+let newDate =  new Date("2022-5-15");
+console.log("Date: "+ newDate);
+            // setTimeout(greet, 3000, "Nadeem");      // will show promt once after 3 seconds
+           // setInterval(greet, 5000, "Nadeem");     // keep showing promt after every 5 seconds
+
+        function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if(para.style.background != 'maroon'){
+                para.style.background = 'maroon';
+            }
+            else{
+                para.style.background = 'yellow';
+                
+            }
+        
+        }
+    </script>
+</body>
+</html>
