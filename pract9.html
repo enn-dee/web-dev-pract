@@ -19,9 +19,22 @@
             color: maroon;
             size: 30px;
         }
+        .container{
+            border: 1px solid black;
+            background: teal;
+            padding: 10px 10px;
+            
+        }
+        #date{
+            font-weight: bold;
+
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        Current Time is <span id="date"></span>
+    </div>
     <h3>Welcome to <span>EnnCoders</span></h3>
     <div>
         <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolores ullam, minus iusto distinctio quasi consequuntur, quis asperiores illo error expedita sit illum!</p>
@@ -29,12 +42,20 @@
     </div>
     <button id="btn" onclick="toggleHide()">Show/Hide</button>
     <script>
-            function greet(name){
-              alert("hello gm "+name);
+            // function greet(name){
+            //   alert("hello gm "+name);
+
+            // }
+            
+            setInterval(newTime,1000);
+            
+            function newTime(){
+               date.innerHTML   = new Date();
+
 
             }
-            
-let newDate =  new Date("2022-5-15");
+
+let newDate =  new Date();
 console.log("Date: "+ newDate);
             // setTimeout(greet, 3000, "Nadeem");      // will show promt once after 3 seconds
            // setInterval(greet, 5000, "Nadeem");     // keep showing promt after every 5 seconds
